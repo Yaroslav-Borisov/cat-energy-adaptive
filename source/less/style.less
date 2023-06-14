@@ -1,0 +1,59 @@
+// Vieports
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 767px;
+
+// Fonts
+
+@font-face {
+    font-family: "Oswald";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Oswald-Regular.woff");
+    src: url("../fonts/Oswald-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Oswald-Bold.woff");
+    src: url("../fonts/Oswald-Bold.woff2");
+}
+
+// Visually-hidden
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect( 0 0 0 0);
+    overflow: hidden;
+}
+
+// @import("blocks/page.less");
+
+.page {
+    height: 100%;
+    font-size: 18px;
+    font-family: "Oswald", "Arial", sans-serif;
+    line-height: 27px;
+}
+
+.page__body {
+    min-height: 100%;
+    margin: 0;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+// @import("blocks/page-header.less");
+

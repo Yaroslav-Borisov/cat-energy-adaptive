@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/css/normalize.css">
+    <link rel="stylesheet" href="../build/css/style.min.css">
+    <title>Cat Energy</title>
+</head>
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo" href="#">
+            <picture>
+                <source media="(min-width: @desktop-width)" srcset="../build/img/svg/logo-desktop.svg 1x, ../build/img/svg/logo-desktop@2x.svg 2x">
+                <source media="(min-width: @tablet-width)" srcset="../build/img/svg/logo-tablet.svg 1x, ../build/img/svg/logo-tablet@2x.svg 2x">
+                <source media="(min-width: @mobile-width-only)" srcset="../build/img/svg/logo-mobile.svg 1x, ../build/img/svg/logo-mobile@2x.svg 2x">
+                <img src="../build/img/svg/logo-mobile.svg" srcset="..build/img/svg/logo-mobile@2x.svg 2x" width="34" height="38" alt="Логотип Кэт Энерджи">
+            </picture>
+        </a>
+        <a class="page-header__logo-word" href="#">
+            <picture>
+                <source media="(min-width: @mobile-width-only)" srcset="../build/img/svg/logo-word.svg 1x, ../build/img/svg/logo-word@2x.svg 2x">
+                <img src="../build/img/svg/logo-word.svg" srcset="..build/img/svg/logo-word@2x.svg 2x" width="101" height="18" alt="Надпись Кэт Энерджи">
+            </picture>
+        </a>
+
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть навигацию</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">
+                            Каталог продукции
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">
+                            Подбор программы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+
+        <h1 class="page-main__title">
+            Подбор программы
+        </h1>
+
+        <p class="page-main__info">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+
+        <form class="page-main__form" action="#" method="get"></form>
+            
+            <div class="main-data">
+                <ul class="main-form__list">
+                    <li class="main-form__item">
+                        <label for="cat-name">Имя:*</label>
+                        <input id="cat-name" type="text" name="cat-name" placeholder="БАРСИК">
+                    </li>
+                    <li class="main-form__item">
+                        <label for="cat-weight">Вес (кг):*</label>
+                        <input id="cat-weight" type="text" name="cat-weight" placeholder="7">
+                    </li>
+                    <li class="main-form__item">
+                        <label for="cat-age">Возраст (лет):*</label>
+                        <input id="cat-age" type="text" name="cat-age" placeholder="7">
+                    </li>
+                </ul>
+            </div>    
+
+            <div class="programs-form">
+                <ul class="programs-form__list">
+                    <li class="programs-form__item">
+                        <label for="weight-loss">Похудение</label>
+                        <input id="weight-loss" type="radio" name="programs-form" checked>
+                    </li>
+                    <li class="programs-form__item">
+                        <label for="weight-gain">Набор массы</label>
+                        <input id="weight-gain" type="radio" name="programs-form">
+                    </li>
+                    <li class="programs-form__item">
+                        <label for="need-advice">Не знаю (нужен ваш совет)</label>
+                        <input id="need-advice" type="radio" name="programs-form">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-data">
+                <h2 class="contact-data__title">
+                    Контактные данные (владельца кота)
+                </h2>
+
+                <ul class="contact-data__list">
+                    <li class="contact-data__item">
+                        <label for="owner-email">Email:*</label>
+                        <input id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                    </li>
+                    <li class="contact-data__item">
+                        <label for="owner-phone">Телефон:*</label>
+                        <input id="owner-phone" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="comment">
+                <h2 class="comment__title">
+                    Комментарий
+                </h2>
+                <textarea id="comment" rows="5" cols="40">Расскажите обо всех повадках кота</textarea>
+            </div>
+        
+            <div class="additionally">
+                <h2 class="additionally__title">
+                    Дополнительно
+                </h2>
+                <ul class="additionally__list">
+                    <li class="additionally__item">
+                        <label for="sweetener">Сахарозаменитель</label>
+                        <input id="sweetener" type="checkbox" name="sweetener" checked>
+                    </li>
+                    <li class="additionally__item">
+                        <label for="water">Питьевая вода</label>
+                        <input id="water" type="checkbox" name="water">
+                    </li>
+                    <li class="additionally__item">
+                        <label for="milk">Молоко</label>
+                        <input id="milk" type="checkbox" name="milk">
+                    </li>
+                    <li class="additionally__item">
+                        <label for="vitamins">Витамины</label>
+                        <input id="vitamins" type="checkbox" name="vitamins">
+                    </li>
+                </ul>
+            </div>
+            <input type="submit" value="Отправить заявку">
+            <span class="required-fields">
+                * — Обязательные поля
+            </span>
+        </form>
+
+    </main>
+
+    <footer class="page-footer">
+
+        <section class="page-footer__partnership">
+            <span class="page-footer__invite">
+                приглашаем к сотрудничеству дилеров!
+            </span>
+            <span class="page-footer__address">
+                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </span>
+        </section>
+
+        <section class="page-footer__map">
+            <!--Тут будет карта-->
+        </section>
+
+        <section class="page-footer__contact">
+
+            <div class="page-footer__logo">
+                <a class="page-footer__logo-word" href="#">
+                    <picture>
+                        <source media="(min-width: @mobile-width-only)" srcset="../build/img/svg/logo-word.svg 1x, ../build/img/svg/logo-word@2x.svg 2x">
+                        <img src="../build/img/svg/logo-word.svg" srcset="..build/img/svg/logo-word@2x.svg 2x" width="101" height="18" alt="Надпись Кэт Энерджи">
+                    </picture>
+                </a>
+            </div>
+            
+            <div class="page-footer__social">
+                <a class="page-footer__social-vk" href="#">ВК</a>
+                <a class="page-footer__social-inst" href="#">Инстаграм</a>
+                <a class="page-footer__social-fb" href="#">Фейсбук</a>
+            </div>
+
+            <div class="page-footer__copyright">
+                <div class="page-footer__copyright-name">HTML Academy</div>
+                <div class="page-footer__copyright-logo">
+                    <picture>
+                        <source media="(min-width: @mobile-width-only)" srcset="../build/img/svg/logo-html.svg 1x, ../build/img/svg/logo-html@2x.svg 2x">
+                        <img src="../build/img/svg/logo-html.svg" srcset="..build/img/svg/logo-html@2x.svg 2x" width="27" height="34" alt="HTML Academy">
+                    </picture>
+                </div> 
+            </div>
+
+        </section>
+    </footer>
+</body>
+</html>
